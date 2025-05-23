@@ -13,6 +13,24 @@
 //     navMenu.style.left = '-300px';
 // });
 
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      const message = document.getElementById("message").value;
+
+      const text = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
+      const whatsappNumber = "917094383426"; 
+      const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+
+      window.open(url, "_blank");
+    });
+  });
+
+
 
 const swiper = new Swiper('.slider-wrapper', {
     loop: true,
@@ -46,3 +64,15 @@ const swiper = new Swiper('.slider-wrapper', {
     }
     
   });
+
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('header');
+
+    if (window.scrollY > 500) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+  

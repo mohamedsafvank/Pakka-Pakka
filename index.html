@@ -20,7 +20,7 @@
   <header>
     <nav class="navbar section-content">
       <a href="#" class="nav-logo">
-        <h2 class="logo-text">☕ Coffee</h2>
+        <h2 class="logo-text">☕ Pakka Pakka</h2>
       </a>
 
       <input type="checkbox" id="nav-toggle" hidden />
@@ -59,22 +59,21 @@
     <section class="hero-section" id="Home">
       <div class="section-content">
         <div class="hero-details">
-          <h2 class="title">Best Coffee</h2>
-          <h3 class="sub-title">
-            Make your Day Grate with Our Special Coffee !
-          </h3>
+          <h2 class="title">Pakka Pakka</h2>
+          <h3 class="sub-title">Hot Plates. Cool Vibes. All in One Place</h3>
           <p class="description">
-            Welcome to our coffee paradise ,Where every bean tells and every
-            cup sparks joy.
+            Welcome to our kitchen paradise, where warmth meets refreshment,
+            and every plate is a story.
           </p>
           <div class="buttons">
-            <a href="#" class="button order-now">Order Now</a>
-            <a href="#" class="button contact-us">Contact-Us</a>
+            <a href="#Contact" class="button order-now">Order Now</a>
+            <a href="#Contact" class="button contact-us">Contact-Us</a>
           </div>
         </div>
         <div class="hero-image-wraper">
-          <img src="./images/hero-section-image.png
-                    " alt="hero-details" class="hero-image" />
+          <img
+            src="./images/142902916-isolated-cold-latte-with-milk-pouring-down-into-takeout-cup-in-3d-illustration-removebg-preview.png"
+            alt="hero-details" class="hero-image" />
         </div>
       </div>
     </section>
@@ -91,12 +90,12 @@
         <div class="about-details">
           <h2 class="section-title">About Us</h2>
           <p class="text">
-            Our passion for coffee is evident in every sip, as we carefully
-            source the finest beans from around the world. Join us on a
-            journey of flavor and aroma, and discover the magic of our
-            handcrafted brews. Whether you're a coffee connoisseur or just
-            looking for a cozy spot to unwind, we have something special for
-            everyone.
+            Our passion for flavor shines through every dish and drink, as we
+            bring together the best of bold, sizzling meals and refreshingly
+            cool delights. Join us on a journey where warmth and chill
+            coexist, crafted with care for every taste and craving. Whether
+            you're here to heat things up or cool down and relax, there's
+            something special waiting just for you.
           </p>
           <div class="social-link-list">
             <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
@@ -154,6 +153,30 @@
             <p class="text">
               Rich and Irresistible Chocolates to Melt Your Heart and Delight
               Your Taste Buds.
+            </p>
+          </li>
+          <li class="menu-item">
+            <img src="./images/fruits.png" alt="" class="menu-image" />
+            <h3 class="name">Fruits</h3>
+            <p class="text">
+              Fresh and Flavorful Fruits to Brighten Your Day and Tingle Your
+              Taste Buds.
+            </p>
+          </li>
+          <li class="menu-item">
+            <img src="./images/burger.png" alt="" class="menu-image" />
+            <h3 class="name">Snackables</h3>
+            <p class="text">
+              Crunchy and Irresistible Snacks to Satisfy Your Cravings and
+              Delight Your Taste Buds.
+            </p>
+          </li>
+          <li class="menu-item">
+            <img src="./images/chinease.png" alt="" class="menu-image" />
+            <h3 class="name">Chinease Foods</h3>
+            <p class="text">
+              Authentic and Aromatic Chinese Flavors to Warm Your Soul and
+              Excite Your Taste Buds.
             </p>
           </li>
         </ul>
@@ -230,27 +253,26 @@
       <div class="section-content">
         <ul class="gallery-list">
           <li class="gallery-item">
-            <img src="./gallery/cold-coffee.png" alt="" class="gallery-image">
+            <img src="./gallery/cold-coffee.png" alt="" class="gallery-image" />
           </li>
           <li class="gallery-item">
-            <img src="./gallery/dish1.png" alt="" class="gallery-image">
+            <img src="./gallery/dish1.png" alt="" class="gallery-image" />
           </li>
           <li class="gallery-item">
-            <img src="./gallery/pizza.png" alt="" class="gallery-image">
+            <img src="./gallery/pizza.png" alt="" class="gallery-image" />
           </li>
           <li class="gallery-item">
             <img src="https://www.thesugarandspice.com/cdn/shop/files/CopyofLSD07524.png?v=1741764906" alt=""
-              class="gallery-image">
+              class="gallery-image" />
           </li>
           <li class="gallery-item">
             <img src="https://t3.ftcdn.net/jpg/02/55/42/50/360_F_255425068_CyDrGsVcu1Bl2SdJ2yXx35Rlp8jyNCCQ.jpg" alt=""
-              class="gallery-image">
+              class="gallery-image" />
           </li>
           <li class="gallery-item">
             <img src="https://www.shutterstock.com/image-photo/gin-tonic-cocktail-dry-rosemary-600nw-2261736105.jpg"
-              alt="" class="gallery-image">
+              alt="" class="gallery-image" />
           </li>
-
         </ul>
       </div>
     </section>
@@ -260,21 +282,25 @@
     <section class="contact-section" id="Contact">
       <h2 class="section-title">Contact Us</h2>
       <div class="section-content">
-        <form action="#" class="contact-form">
-          <input type="text" placeholder="Your Name" class="form-input" required>
-          <input type="text" placeholder="Your Email" class="form-input" required>
-          <textarea name="" id="" class="form-input" placeholder="Your Message" required></textarea>
-          <button class="submit-button">Submit</button>
+        <form action="#" class="contact-form" id="contact-form">
+          <input id="name" type="text" placeholder="Your Name" class="form-input" required />
+          <input id="email" type="email" placeholder="Your Email" class="form-input" required />
+          <input id="phone" type="number" placeholder="Your Phone Number" class="form-input" required />
+          <textarea id="message" class="form-input" placeholder="Your Message" required></textarea>
+
+          <button class="submit-button" type="submit">Submit</button>
+          <h3 class="form-message">
+            After Submitting i will Contact You Very Soon
+          </h3>
         </form>
       </div>
     </section>
     <!-- Contact Section End -->
 
-
     <!-- Footer Section Start -->
     <footer class="footer-section">
       <div class="section-content">
-        <p class="copyright-text">© 2025 Coffee Shop</p>
+        <p class="copyright-text">© 2025 Pakka Pakka</p>
 
         <div class="social-link-list">
           <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
